@@ -1,6 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{resume}[2015/05/25 An elegant Résumé class]
-\LoadClass[11pt]{article}
+\LoadClass[10pt]{article}
 
 % disable indent globally
 \setlength{\parindent}{0pt}
@@ -19,18 +19,18 @@
   Path = fonts/Main/ ,
   Extension = .otf ,
   UprightFont = *-regular ,
-  BoldFont = *-bold ,
+  BoldFont = *-Semibold ,
   ItalicFont = *-it ,
-  BoldItalicFont = *-Boldit ,
+  BoldItalicFont = *-Semiboldit ,
   SmallCapsFont = Fontin-SmallCaps
 ]{SourceCodePro}
 
 \RequirePackage[
 	a4paper,
-	left=0.8in,
-	right=0.8in,
-	top=0.70in,
-	bottom=0.55in,
+	left=0.5in,
+	right=0.5in,
+	top=0.50in,
+	bottom=0.5in,
 	nohead
 ]{geometry}
 
@@ -75,7 +75,7 @@
   \centerline{\sffamily\large{\faEnvelope\ {#1} \textperiodcentered\ \faPhone\ {#2}}
     \ifthenelse{\isempty{#3}}%
       { } % if {#3} is empty
-      {\textperiodcentered\ \faLink\ {#3} } % homepage, no space before \text...
+      {\textperiodcentered\ \faGithub\ {#3} } % homepage, no space before \text...
   }
   \vspace{1.5ex}
 }
