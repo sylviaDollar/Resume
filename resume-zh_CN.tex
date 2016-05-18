@@ -3,6 +3,11 @@
 % !Mode:: "TeX:UTF-8"
 
 \documentclass{resume}
+\usepackage[colorlinks,
+            linkcolor=red,
+            anchorcolor=blue,
+            citecolor=green
+            ]{hyperref}
 \usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
 %\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
 \usepackage{linespacing_fix} % disable extra space before next section
@@ -15,37 +20,39 @@
 
 % {E-mail}{mobilephone}{homepage}
 % be careful of _ in emaill address
-\contactInfo{nanjiang@buaa.edu.cn}{(+86) 131-4651-9692}{github.com/jiangnanHugo}
+\contactInfo{nanjiang@buaa.edu.cn}{(+86) 131-4651-9692}{\href{http://github.com/jiangnanHugo}{github.com/jiangnanHugo}}
 % {E-mail}{mobilephone}
 % keep the last empty braces!
 %\contactInfo{xxx@yuanbin.me}{(+86) 131-221-87xxx}{}
 
 \section{\faGraduationCap\  教育背景}
-\datedsubsection{\textbf{北京航空航天大学}}{2013 -- 至今}
-\textit{在读硕士研究生}\ 信息与通信工程, 预计 2016 年 3 月毕业
-\datedsubsection{\textbf{浙江工业大学}}{2009 -- 2013}
-\textit{学士}\ 计算机科学与技术 + 自动化(双专业)
+\datedsubsection{\textbf{北京航空航天大学}}{2015 - 至今}
+\textit{在读硕士研究生}\ 计算机科学与技术专业 \\
+计算机学院
+\datedsubsection{\textbf{浙江工业大学}}{2011 - 2015}
+\textit{学士}\ 计算机科学与技术 + 自动化专业(双专业)\\
+计算机科学与技术学院 \\
+平均绩点: 4.0, 排名: 1/60
+
+\section{\faLightbulbO\ 研究方向}
+自然语言处理，机器学习，深度学习，神经网络
+
+\section{\faBook\ 已发表论文}
+\begin{itemize}[parsep=0.5ex]
+\item Jiang N, Rong W, Peng B, et al. Modeling Joint Representation with Tri-Modal Deep Belief Networks for Query and Question Matching[J]. IEICE Transactions, 2016, 99(4): 927-935.
+
+\item Jiang N, Rong W, Peng B, et al. An empirical analysis of different sparse penalties for autoencoder in unsupervised feature learning[C]//Neural Networks (IJCNN), 2015 International Joint Conference on. IEEE, 2015: 1-8.
+\end{itemize}
 
 \section{\faUsers\ 实习/项目经历}
-\datedsubsection{\textbf{黑科技公司} 上海}{2015年3月 -- 2015年5月}
-\role{实习}{经理: 高富帅}
-xxx后端开发
-\begin{itemize}
-  \item 实现了 xxx 特性
-  \item 后台资源占用率减少8\%
-  \item xxx
-\end{itemize}
+\datedsubsection{\textbf{教育部工程中心}}{2015.10}
+\role{北京航空航天大学}{研究助理}
+大四下学期进入该实验室实习，学习机器学习算法，主要研究NLP方向.期间，发表一篇会议论文、一篇期刊论文，参加一次国际会议，获得该会议颁发的Travel Grant.
 
-\datedsubsection{\textbf{分布式科学上网姿势}}{2014年6月 -- 至今}
-\role{Golang, Linux}{个人项目，和富帅糕合作开发}
-\begin{onehalfspacing}
-分布式负载均衡科学上网姿势, https://github.com/cyfdecyf/cow
-\begin{itemize}
-  \item 修复了连接未正常关闭导致文件描述符耗尽的 bug
-  \item 使用Chord 哈希 URL, 实现稳定可靠地分流
-  \item xxx (尽量使用量化的客观结果)
-\end{itemize}
-\end{onehalfspacing}
+
+\datedsubsection{\textbf{图形图像实验室}}{2013.9}
+\role{浙江工业大学}{iOS/Android 开发员}
+学习Android/iOS 基本框架，开发后台和手机后台数据通信的基本框架，并将数据以各种图表形式绘制在手机页面上，并利用此项目申请了国家创新科技立项。
 
 
 
@@ -59,21 +66,25 @@ xxx后端开发
 \section{\faCogs\ IT 技能}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item 编程语言: C == Python > C++ > Java
-  \item 平台: Linux
-  \item 开发: xxx
+  \item 编程语言: Python, C/C++, Java, R, Bash
+  \item 工具: Linux, Git, Vim, Matlab
+  \item 开发库: Theano, Keras, Numpy, Tensorflow
 \end{itemize}
 
-\section{\faHeartO\ 获奖情况}
-\datedline{\textit{第一名}, xxx 比赛}{2013 年6 月}
-\datedline{其他奖项}{2015}
+\section{\faStar\ 获奖情况}
+\datedline{二等奖学金(北京航空航天大学)}{2015}
+\datedline{Travel Grant of IEEE IJCNN(IEEE)}{2015}
+\datedline{优秀毕业生(浙江工业大学)}{2015}
+\datedline{校一等奖学金(浙江工业大学)}{2014,2013,2012}
+\datedline{国家励志奖学金(浙江工业大学)}{2013}
+\datedline{国家奖学金(浙江工业大学)}{2012}
+
 
 \section{\faInfo\ 语言水平}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item 技术博客: http://blog.yours.me
-  \item GitHub: https://github.com/username
-  \item 语言: 英语 - 熟练(TOEFL xxx)
+  \item 英语考试: CET-4(602), CET-6(566)
+  \item 写作水平: 熟练
 \end{itemize}
 
 %% Reference
